@@ -1,5 +1,5 @@
 use criterion::{black_box, criterion_group, criterion_main, Criterion};
-use gcra::{RateLimiter, SyncRateLimiter};
+use gcra_limiter::{RateLimiter, SyncRateLimiter};
 use std::time::Duration;
 
 fn bench_rate_limiter_acquire(c: &mut Criterion) {

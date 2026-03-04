@@ -14,7 +14,7 @@
 //! ## Usage Example
 //!
 //! ```rust
-//! use gcra::RateLimiter;
+//! use gcra_limiter::RateLimiter;
 //! use std::time::Duration;
 //!
 //! // Create a rate limiter allowing 10 requests per second with a burst of 5
@@ -78,7 +78,7 @@ impl AcquireResult {
 /// # Example
 ///
 /// ```
-/// use gcra::RateLimiter;
+/// use gcra_limiter::RateLimiter;
 /// use std::time::Duration;
 ///
 /// let mut limiter = RateLimiter::new(10, Duration::from_secs(1), 5);
@@ -116,7 +116,7 @@ impl RateLimiter {
     /// # Example
     ///
     /// ```
-    /// use gcra::RateLimiter;
+    /// use gcra_limiter::RateLimiter;
     /// use std::time::Duration;
     ///
     /// // 10 requests per second, burst of 5
@@ -152,7 +152,7 @@ impl RateLimiter {
     /// # Example
     ///
     /// ```
-    /// use gcra::RateLimiter;
+    /// use gcra_limiter::RateLimiter;
     /// use std::time::Duration;
     ///
     /// let mut limiter = RateLimiter::new(10, Duration::from_secs(1), 5);
@@ -217,7 +217,7 @@ impl RateLimiter {
     /// # Example
     ///
     /// ```
-    /// use gcra::RateLimiter;
+    /// use gcra_limiter::RateLimiter;
     /// use std::time::Duration;
     ///
     /// let mut limiter = RateLimiter::new(1, Duration::from_secs(1), 0);
@@ -247,7 +247,7 @@ impl RateLimiter {
 /// # Example
 ///
 /// ```
-/// use gcra::SyncRateLimiter;
+/// use gcra_limiter::SyncRateLimiter;
 /// use std::time::Duration;
 /// use std::sync::Arc;
 /// use std::thread;

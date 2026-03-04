@@ -2,7 +2,7 @@
 //!
 //! Run with: cargo run --example basic
 
-use gcra::RateLimiter;
+use gcra_limiter::RateLimiter;
 use std::thread;
 use std::time::Duration;
 

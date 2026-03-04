@@ -2,7 +2,7 @@
 //!
 //! Run with: cargo run --example sync
 
-use gcra::SyncRateLimiter;
+use gcra_limiter::SyncRateLimiter;
 use std::sync::Arc;
 use std::thread;
 use std::time::Duration;

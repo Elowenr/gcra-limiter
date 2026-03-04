@@ -1,9 +1,9 @@
 # GCRA
 
-[![Crates.io](https://img.shields.io/crates/v/gcra)](https://crates.io/crates/gcra)
-[![Docs.rs](https://docs.rs/gcra/badge.svg)](https://docs.rs/gcra)
-[![License](https://img.shields.io/crates/l/gcra)](LICENSE)
-[![Build Status](https://github.com/yourusername/gcra/workflows/CI/badge.svg)](https://github.com/yourusername/gcra/actions)
+[![Crates.io](https://img.shields.io/crates/v/gcra-limiter)](https://crates.io/crates/gcra-limiter)
+[![Docs.rs](https://docs.rs/gcra-limiter/badge.svg)](https://docs.rs/gcra-limiter)
+[![License](https://img.shields.io/crates/l/gcra-limiter)](LICENSE)
+[![Build Status](https://github.com/Elowenr/gcra-limiter/workflows/CI/badge.svg)](https://github.com/Elowenr/gcra-limiter/actions)
 
 A Rust implementation of the GCRA (Generic Cell Rate Algorithm) for rate limiting, providing precise rate control and traffic shaping capabilities.
 
@@ -21,7 +21,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-gcra = "0.2.0"
+gcra-limiter = "0.2.0"
 ```
 
 ## Quick Start
@@ -29,7 +29,7 @@ gcra = "0.2.0"
 ### Basic Usage
 
 ```rust
-use gcra::RateLimiter;
+use gcra_limiter::RateLimiter;
 use std::time::Duration;
 
 fn main() {
@@ -48,7 +48,7 @@ fn main() {
 ### Thread-Safe Version
 
 ```rust
-use gcra::SyncRateLimiter;
+use gcra_limiter::SyncRateLimiter;
 use std::sync::Arc;
 use std::thread;
 use std::time::Duration;
@@ -77,7 +77,7 @@ fn main() {
 The basic rate limiter for single-threaded use.
 
 ```rust
-use gcra::RateLimiter;
+use gcra_limiter::RateLimiter;
 use std::time::Duration;
 
 // Create a rate limiter
@@ -100,7 +100,7 @@ limiter.reset();
 Thread-safe rate limiter using lock-free atomic operations.
 
 ```rust
-use gcra::SyncRateLimiter;
+use gcra_limiter::SyncRateLimiter;
 use std::time::Duration;
 
 // Create a thread-safe rate limiter
