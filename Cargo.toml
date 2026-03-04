@@ -9,7 +9,7 @@ repository = "https://github.com/Elowenr/gcra-limiter"
 homepage = "https://github.com/Elowenr/gcra-limiter"
 documentation = "https://docs.rs/gcra"
 readme = "README.md"
-keywords = ["rate-limiting", "gcra", "throttling", "token-bucket", "leaky-bucket", "traffic-shaping"]
+keywords = ["rate-limiting", "gcra", "throttling", "token-bucket", "leaky-bucket"]
 categories = ["algorithms", "network-programming", "web-programming"]
 rust-version = "1.70"
 
